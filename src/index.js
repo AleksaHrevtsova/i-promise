@@ -1,5 +1,6 @@
 import css from "./css/styles.css";
-
+import "./js/XMLHttpRequest.js";
+import "./js/fetch.js";
 // function y(val) {
 //   return val + 1;
 // }
@@ -153,35 +154,35 @@ import css from "./css/styles.css";
 // Promise.reject()
 // Promise.finally()
 
-function cb(val) {
-  return val + 1;
-}
+// function cb(val) {
+//   return val + 1;
+// }
 
-function myFunc(val, cb) {
-  // return cb(val);
-  return Promise.resolve(val + 1);
-}
-let total = myFunc(0, cb);
+// function myFunc(val, cb) {
+//   // return cb(val);
+//   return Promise.resolve(val + 1);
+// }
+// let total = myFunc(0, cb);
 
-console.log(total);
-total.then((r) => {
-  console.log(r);
-});
+// console.log(total);
+// total.then((r) => {
+//   console.log(r);
+// });
 
-console.log(window);
-// fetch()
+// console.log(window);
+// // fetch()
 
-let _search = "Margarita";
+// let _search = "Margarita";
 
-fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${_search}`)
-  .then((res) => {
-    console.log(res);
-    return res.json();
-  })
-  .then((d) => {
-    console.log(d);
-    return d.drinks;
-  })
-  .then((array) => {
-    array.map((el) => console.log(el));
-  });
+// fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${_search}`)
+//   .then((res) => {
+//     console.log(res);
+//     return res.json();
+//   })
+//   .then((d) => {
+//     console.log(d);
+//     return d.drinks;
+//   })
+//   .then((array) => {
+//     array.map((el) => console.log(el));
+//   });
